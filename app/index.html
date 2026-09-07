@@ -29,13 +29,30 @@
     <link rel="canonical" href="https://library.tanaakk.com/en/dashboard" />
     <!-- System-Native フォント優先（読み込み容量ゼロ・HST準拠） -->
     <meta name="theme-color" content="#0ea5e9" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D4DPZVM9F4"></script>
+    <!-- Google tag: idle 後に遅延ロード（初回描画を阻害しない） -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D4DPZVM9F4');
+      (function () {
+        var loaded = false;
+        function loadGtag() {
+          if (loaded) return;
+          loaded = true;
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id=G-D4DPZVM9F4';
+          s.onload = function () {
+            gtag('js', new Date());
+            gtag('config', 'G-D4DPZVM9F4');
+          };
+          document.head.appendChild(s);
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadGtag, { timeout: 4000 });
+        } else {
+          window.addEventListener('load', function () { setTimeout(loadGtag, 1); });
+        }
+      })();
     </script>
   </head>
   <body>

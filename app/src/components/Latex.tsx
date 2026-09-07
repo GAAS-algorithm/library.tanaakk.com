@@ -1,71 +1,23 @@
-import { createMemo } from 'solid-js'
-import katex from 'katex'
-import 'katex/dist/katex.min.css'
+import { createResource, Show } from 'solid-js'
+
+type Katex = typeof import('katex').default
+
+let katexPromise: Promise<Katex> | null = null
+
+function loadKatex(): Promise<Katex> {
+  if (!katexPromise) {
+    katexPromise = Promise.all([
+      import('katex'),
+      import('katex/dist/katex.min.css'),
+    ]).then(([mod]) => mod.default)
+  }
+  return katexPromise
+}
 
 type Props = {
   content: string
   displayMode?: boolean
   class?: string
-}
-
-/**
- * LaTeX を含む文字列をレンダリング。
- * $...$ で囲まれた部分をインライン数式、$$...$$ をディスプレイ数式として解釈。
- * それ以外はプレーンテキスト。
- */
-export function Latex(props: Props) {
-  const html = createMemo(() => {
-    const content = props.content
-    if (!content || content === '—') return content
-
-    const displayRegex = /\$\$([^$]+)\$\$/g
-    const inlineRegex = /\$([^$]+)\$/g
-
-    let match
-    const allMatches: { type: 'display' | 'inline'; start: number; end: number; latex: string }[] = []
-
-    while ((match = displayRegex.exec(content)) !== null) {
-      allMatches.push({ type: 'display', start: match.index, end: match.index + match[0].length, latex: match[1] })
-    }
-    while ((match = inlineRegex.exec(content)) !== null) {
-      allMatches.push({ type: 'inline', start: match.index, end: match.index + match[0].length, latex: match[1] })
-    }
-
-    allMatches.sort((a, b) => a.start - b.start)
-
-    if (allMatches.length === 0) {
-      return { __html: escapeHtml(content) }
-    }
-
-    let result = ''
-    let pos = 0
-
-    for (const m of allMatches) {
-      if (m.start > pos) {
-        result += escapeHtml(content.slice(pos, m.start))
-      }
-      try {
-        result += katex.renderToString(m.latex, {
-          throwOnError: false,
-          displayMode: m.type === 'display' || (props.displayMode ?? false),
-          output: 'html',
-        })
-      } catch {
-        result += escapeHtml('$' + m.latex + '$')
-      }
-      pos = m.end
-    }
-    if (pos < content.length) {
-      result += escapeHtml(content.slice(pos))
-    }
-    return { __html: result }
-  })
-
-  const result = html()
-  if (typeof result === 'string') {
-    return <span class={props.class}>{result}</span>
-  }
-  return <span class={props.class} innerHTML={result.__html} />
 }
 
 function escapeHtml(s: string): string {
@@ -74,6 +26,80 @@ function escapeHtml(s: string): string {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
+}
+
+function renderMixedContent(
+  katex: Katex,
+  content: string,
+  displayMode: boolean | undefined
+): string {
+  const displayRegex = /\$\$([^$]+)\$\$/g
+  const inlineRegex = /\$([^$]+)\$/g
+
+  const allMatches: { type: 'display' | 'inline'; start: number; end: number; latex: string }[] = []
+  let match: RegExpExecArray | null
+
+  while ((match = displayRegex.exec(content)) !== null) {
+    allMatches.push({
+      type: 'display',
+      start: match.index,
+      end: match.index + match[0].length,
+      latex: match[1],
+    })
+  }
+  while ((match = inlineRegex.exec(content)) !== null) {
+    allMatches.push({
+      type: 'inline',
+      start: match.index,
+      end: match.index + match[0].length,
+      latex: match[1],
+    })
+  }
+
+  allMatches.sort((a, b) => a.start - b.start)
+  if (allMatches.length === 0) return escapeHtml(content)
+
+  let result = ''
+  let pos = 0
+  for (const m of allMatches) {
+    if (m.start > pos) result += escapeHtml(content.slice(pos, m.start))
+    try {
+      result += katex.renderToString(m.latex, {
+        throwOnError: false,
+        displayMode: m.type === 'display' || (displayMode ?? false),
+        output: 'html',
+      })
+    } catch {
+      result += escapeHtml('$' + m.latex + '$')
+    }
+    pos = m.end
+  }
+  if (pos < content.length) result += escapeHtml(content.slice(pos))
+  return result
+}
+
+/**
+ * LaTeX を含む文字列をレンダリング。
+ * katex は初回利用時のみ動的ロードする。
+ */
+export function Latex(props: Props) {
+  const [html] = createResource(
+    () => ({ content: props.content, displayMode: props.displayMode }),
+    async ({ content, displayMode }) => {
+      if (!content || content === '—') return escapeHtml(content || '')
+      const katex = await loadKatex()
+      return renderMixedContent(katex, content, displayMode)
+    }
+  )
+
+  return (
+    <Show
+      when={!html.loading && html()}
+      fallback={<span class={props.class}>{props.content}</span>}
+    >
+      <span class={props.class} innerHTML={html() || ''} />
+    </Show>
+  )
 }
 
 /**
@@ -100,16 +126,28 @@ export function extractFormulaParts(
  * LaTeX のみをディスプレイモードでレンダリング（数式専用列用）
  */
 export function LatexFormula(props: { latex: string; class?: string }) {
-  const html = createMemo(() => {
-    try {
-      return katex.renderToString(props.latex, {
-        throwOnError: false,
-        displayMode: true,
-        output: 'html',
-      })
-    } catch {
-      return escapeHtml(props.latex)
+  const [html] = createResource(
+    () => props.latex,
+    async (latex) => {
+      const katex = await loadKatex()
+      try {
+        return katex.renderToString(latex, {
+          throwOnError: false,
+          displayMode: true,
+          output: 'html',
+        })
+      } catch {
+        return escapeHtml(latex)
+      }
     }
-  })
-  return <div class={props.class} innerHTML={html()} />
+  )
+
+  return (
+    <Show
+      when={!html.loading && html()}
+      fallback={<div class={props.class}>{props.latex}</div>}
+    >
+      <div class={props.class} innerHTML={html() || ''} />
+    </Show>
+  )
 }
