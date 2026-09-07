@@ -1,0 +1,146 @@
+# GAAS R&D Library — full URL index
+
+Site: https://library.tanaakk.com
+Generated: 2026-09-07
+URL count: 117
+
+## All crawlable paths
+- https://library.tanaakk.com/en/nobel/physics
+- https://library.tanaakk.com/ja/nobel/physics
+- https://library.tanaakk.com/vi/nobel/physics
+- https://library.tanaakk.com/en/nobel/chemistry
+- https://library.tanaakk.com/ja/nobel/chemistry
+- https://library.tanaakk.com/vi/nobel/chemistry
+- https://library.tanaakk.com/en/nobel/physiology_or_medicine
+- https://library.tanaakk.com/ja/nobel/physiology_or_medicine
+- https://library.tanaakk.com/vi/nobel/physiology_or_medicine
+- https://library.tanaakk.com/en/nobel/literature
+- https://library.tanaakk.com/ja/nobel/literature
+- https://library.tanaakk.com/vi/nobel/literature
+- https://library.tanaakk.com/en/nobel/peace
+- https://library.tanaakk.com/ja/nobel/peace
+- https://library.tanaakk.com/vi/nobel/peace
+- https://library.tanaakk.com/en/nobel/economic_sciences
+- https://library.tanaakk.com/ja/nobel/economic_sciences
+- https://library.tanaakk.com/vi/nobel/economic_sciences
+- https://library.tanaakk.com/en/tier1-awards/breakthrough
+- https://library.tanaakk.com/ja/tier1-awards/breakthrough
+- https://library.tanaakk.com/vi/tier1-awards/breakthrough
+- https://library.tanaakk.com/en/tier1-awards/abel
+- https://library.tanaakk.com/ja/tier1-awards/abel
+- https://library.tanaakk.com/vi/tier1-awards/abel
+- https://library.tanaakk.com/en/tier1-awards/fields
+- https://library.tanaakk.com/ja/tier1-awards/fields
+- https://library.tanaakk.com/vi/tier1-awards/fields
+- https://library.tanaakk.com/en/tier1-awards/turing
+- https://library.tanaakk.com/ja/tier1-awards/turing
+- https://library.tanaakk.com/vi/tier1-awards/turing
+- https://library.tanaakk.com/en/tier1-awards/lasker
+- https://library.tanaakk.com/ja/tier1-awards/lasker
+- https://library.tanaakk.com/vi/tier1-awards/lasker
+- https://library.tanaakk.com/en/tier1-awards/copley
+- https://library.tanaakk.com/ja/tier1-awards/copley
+- https://library.tanaakk.com/vi/tier1-awards/copley
+- https://library.tanaakk.com/en/tier1-awards/hermann_weyl
+- https://library.tanaakk.com/ja/tier1-awards/hermann_weyl
+- https://library.tanaakk.com/vi/tier1-awards/hermann_weyl
+- https://library.tanaakk.com/en/dashboard
+- https://library.tanaakk.com/ja/dashboard
+- https://library.tanaakk.com/vi/dashboard
+- https://library.tanaakk.com/en/awards
+- https://library.tanaakk.com/ja/awards
+- https://library.tanaakk.com/vi/awards
+- https://library.tanaakk.com/en/frontier-topics
+- https://library.tanaakk.com/ja/frontier-topics
+- https://library.tanaakk.com/vi/frontier-topics
+- https://library.tanaakk.com/en/institutions
+- https://library.tanaakk.com/ja/institutions
+- https://library.tanaakk.com/vi/institutions
+- https://library.tanaakk.com/en/schema
+- https://library.tanaakk.com/ja/schema
+- https://library.tanaakk.com/vi/schema
+- https://library.tanaakk.com/en/sitemap
+- https://library.tanaakk.com/ja/sitemap
+- https://library.tanaakk.com/vi/sitemap
+- https://library.tanaakk.com/en/frontier-topics/nuclear_fission
+- https://library.tanaakk.com/ja/frontier-topics/nuclear_fission
+- https://library.tanaakk.com/vi/frontier-topics/nuclear_fission
+- https://library.tanaakk.com/en/frontier-topics/nuclear_fusion
+- https://library.tanaakk.com/ja/frontier-topics/nuclear_fusion
+- https://library.tanaakk.com/vi/frontier-topics/nuclear_fusion
+- https://library.tanaakk.com/en/frontier-topics/superconductivity
+- https://library.tanaakk.com/ja/frontier-topics/superconductivity
+- https://library.tanaakk.com/vi/frontier-topics/superconductivity
+- https://library.tanaakk.com/en/frontier-topics/quantum_computing
+- https://library.tanaakk.com/ja/frontier-topics/quantum_computing
+- https://library.tanaakk.com/vi/frontier-topics/quantum_computing
+- https://library.tanaakk.com/en/frontier-topics/artificial_general_intelligence
+- https://library.tanaakk.com/ja/frontier-topics/artificial_general_intelligence
+- https://library.tanaakk.com/vi/frontier-topics/artificial_general_intelligence
+- https://library.tanaakk.com/en/frontier-topics/synthetic_biology
+- https://library.tanaakk.com/ja/frontier-topics/synthetic_biology
+- https://library.tanaakk.com/vi/frontier-topics/synthetic_biology
+- https://library.tanaakk.com/en/frontier-topics/brain_computer_interface
+- https://library.tanaakk.com/ja/frontier-topics/brain_computer_interface
+- https://library.tanaakk.com/vi/frontier-topics/brain_computer_interface
+- https://library.tanaakk.com/en/frontier-topics/carbon_capture_utilization
+- https://library.tanaakk.com/ja/frontier-topics/carbon_capture_utilization
+- https://library.tanaakk.com/vi/frontier-topics/carbon_capture_utilization
+- https://library.tanaakk.com/en/frontier-topics/space_propulsion
+- https://library.tanaakk.com/ja/frontier-topics/space_propulsion
+- https://library.tanaakk.com/vi/frontier-topics/space_propulsion
+- https://library.tanaakk.com/en/frontier-topics/longevity_aging
+- https://library.tanaakk.com/ja/frontier-topics/longevity_aging
+- https://library.tanaakk.com/vi/frontier-topics/longevity_aging
+- https://library.tanaakk.com/en/frontier-topics/solid_state_battery
+- https://library.tanaakk.com/ja/frontier-topics/solid_state_battery
+- https://library.tanaakk.com/vi/frontier-topics/solid_state_battery
+- https://library.tanaakk.com/en/frontier-topics/geothermal_deep
+- https://library.tanaakk.com/ja/frontier-topics/geothermal_deep
+- https://library.tanaakk.com/vi/frontier-topics/geothermal_deep
+- https://library.tanaakk.com/en/frontier-topics/gravitational_wave
+- https://library.tanaakk.com/ja/frontier-topics/gravitational_wave
+- https://library.tanaakk.com/vi/frontier-topics/gravitational_wave
+- https://library.tanaakk.com/en/frontier-topics/particle_physics
+- https://library.tanaakk.com/ja/frontier-topics/particle_physics
+- https://library.tanaakk.com/vi/frontier-topics/particle_physics
+- https://library.tanaakk.com/en/frontier-topics/semiconductors
+- https://library.tanaakk.com/ja/frontier-topics/semiconductors
+- https://library.tanaakk.com/vi/frontier-topics/semiconductors
+- https://library.tanaakk.com/en/frontier-topics/post_quantum_cryptography
+- https://library.tanaakk.com/ja/frontier-topics/post_quantum_cryptography
+- https://library.tanaakk.com/vi/frontier-topics/post_quantum_cryptography
+- https://library.tanaakk.com/en/frontier-topics/climate_weather_ai
+- https://library.tanaakk.com/ja/frontier-topics/climate_weather_ai
+- https://library.tanaakk.com/vi/frontier-topics/climate_weather_ai
+- https://library.tanaakk.com/en/frontier-topics/precision_medicine_ai
+- https://library.tanaakk.com/ja/frontier-topics/precision_medicine_ai
+- https://library.tanaakk.com/vi/frontier-topics/precision_medicine_ai
+- https://library.tanaakk.com/en/frontier-topics/cybersecurity
+- https://library.tanaakk.com/ja/frontier-topics/cybersecurity
+- https://library.tanaakk.com/vi/frontier-topics/cybersecurity
+- https://library.tanaakk.com/en/frontier-topics/trustworthy_ai
+- https://library.tanaakk.com/ja/frontier-topics/trustworthy_ai
+- https://library.tanaakk.com/vi/frontier-topics/trustworthy_ai
+
+## Frontier topics
+- Nuclear Fission: Next-gen reactors (SMR, molten salt, fast reactors), nuclear waste treatment, safety (https://library.tanaakk.com/en/frontier-topics/nuclear_fission)
+- Nuclear Fusion: Magnetic confinement (tokamak, stellarator), inertial confinement, laser fusion (https://library.tanaakk.com/en/frontier-topics/nuclear_fusion)
+- Superconductivity: High-temperature and room-temperature superconductivity, applications (transmission, MRI, quantum computing) (https://library.tanaakk.com/en/frontier-topics/superconductivity)
+- Quantum Computing: Qubits, error correction, NISQ, algorithms (https://library.tanaakk.com/en/frontier-topics/quantum_computing)
+- Artificial General Intelligence: AGI, foundation models, reasoning, agents (https://library.tanaakk.com/en/frontier-topics/artificial_general_intelligence)
+- Synthetic Biology: Gene editing, metabolic engineering, artificial cells, biofoundries (https://library.tanaakk.com/en/frontier-topics/synthetic_biology)
+- Brain-Computer Interface: Neural prosthetics, Neuralink-type, decoding and encoding (https://library.tanaakk.com/en/frontier-topics/brain_computer_interface)
+- Carbon Capture & Utilization: DAC, CCS, CO2 conversion, negative emissions (https://library.tanaakk.com/en/frontier-topics/carbon_capture_utilization)
+- Space Propulsion: Electric propulsion, nuclear propulsion, solar sail, antimatter (https://library.tanaakk.com/en/frontier-topics/space_propulsion)
+- Longevity & Aging: Aging mechanisms, senolytics, lifespan extension (https://library.tanaakk.com/en/frontier-topics/longevity_aging)
+- Solid-State Battery: Solid electrolyte, lithium metal, energy density (https://library.tanaakk.com/en/frontier-topics/solid_state_battery)
+- Deep Geothermal: EGS, supercritical geothermal, drilling technology (https://library.tanaakk.com/en/frontier-topics/geothermal_deep)
+- Gravitational Wave: LIGO/Virgo/KAGRA, multi-messenger astronomy, black hole and neutron star mergers (https://library.tanaakk.com/en/frontier-topics/gravitational_wave)
+- Particle Physics: Extreme scales: zeptosecond (10^-21 s), subattometer (10^-19 m), LHC, future colliders (https://library.tanaakk.com/en/frontier-topics/particle_physics)
+- Semiconductors: AI hardware, chiplets, advanced process, NorthPole-type accelerators (https://library.tanaakk.com/en/frontier-topics/semiconductors)
+- Post-Quantum Cryptography: PQC, quantum-resistant cryptography, FIPS 203/204/205, key exchange and signatures (https://library.tanaakk.com/en/frontier-topics/post_quantum_cryptography)
+- Climate & Weather AI: Atmospheric foundation models, Aurora/ClimaX, extreme weather prediction, ocean and pollution forecasting (https://library.tanaakk.com/en/frontier-topics/climate_weather_ai)
+- Precision Medicine AI: Early cancer detection, drug discovery acceleration, protein design, multimodal medical AI (https://library.tanaakk.com/en/frontier-topics/precision_medicine_ai)
+- Cybersecurity: Cryptography, resilience, infrastructure protection, zero trust (https://library.tanaakk.com/en/frontier-topics/cybersecurity)
+- Trustworthy AI: AI safety, governance, factuality and grounding, privacy, AI risk management (https://library.tanaakk.com/en/frontier-topics/trustworthy_ai)

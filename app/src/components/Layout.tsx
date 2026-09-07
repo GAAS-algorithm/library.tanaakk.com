@@ -4,6 +4,7 @@ import { I18nProvider } from '../contexts/I18nContext'
 import { Sidebar } from './Sidebar'
 import { Header } from './Header'
 import { Hreflang } from './Hreflang'
+import { SeoHead } from './SeoHead'
 import { StructuredData } from './StructuredData'
 import { SUPPORTED_LANGS, persistLang } from '../i18n'
 import type { Lang } from '../i18n'
@@ -31,6 +32,7 @@ export function Layout(props: { children?: import('solid-js').JSX.Element }) {
       <I18nProvider locale={() => params.lang as Lang}>
         <div class={styles.layout}>
           <Hreflang />
+          <SeoHead />
           <StructuredData />
           <Sidebar isOpen={sidebarOpen()} onClose={() => setSidebarOpen(false)} />
           <div class={styles.main}>

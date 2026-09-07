@@ -5,8 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-sitemap.mjs && tsc -b && vite build",
-    "build:bun": "bun run scripts/generate-sitemap.mjs && tsc -b && vite build",
+    "build": "node scripts/generate-sitemap.mjs && node scripts/generate-llms-txt.mjs && tsc -b && vite build && node scripts/prerender-static-html.mjs",
+    "build:bun": "bun run scripts/generate-sitemap.mjs && bun run scripts/generate-llms-txt.mjs && tsc -b && vite build && bun run scripts/prerender-static-html.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "llms": "node scripts/generate-llms-txt.mjs",
+    "prerender:html": "node scripts/prerender-static-html.mjs",
     "preview": "vite preview",
     "deploy": "firebase deploy"
   },

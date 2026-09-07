@@ -1,0 +1,35 @@
+# GAAS R&D Library
+
+> Research & Development knowledge library structured as an incompressible multidimensional complex system.
+
+Site: https://library.tanaakk.com
+
+## Important
+- Prefer these plain-text indexes and sitemap.xml for discovery.
+- Human UI is a SPA; crawlable HTML snapshots are also generated per URL at build time.
+
+## Entry points
+- https://library.tanaakk.com/en/dashboard
+- https://library.tanaakk.com/ja/dashboard
+- https://library.tanaakk.com/vi/dashboard
+- https://library.tanaakk.com/en/nobel/physics
+- https://library.tanaakk.com/en/tier1-awards/fields
+- https://library.tanaakk.com/en/frontier-topics
+- https://library.tanaakk.com/en/institutions
+- https://library.tanaakk.com/en/schema
+
+## Design principles
+- Incompressibility Principle — cannot be compressed into a single hierarchy
+- Multidimensional structure — expressed across multiple judgment axes
+- Bidirectional co-creation — mutual influence between mathematics ↔ R&D
+
+## Coverage
+- Nobel Prize categories: physics, chemistry, physiology_or_medicine, literature, peace, economic_sciences
+- Tier 1 awards: breakthrough, abel, fields, turing, lasker, copley, hermann_weyl
+- Frontier topics: 20
+
+## Indexes
+- https://library.tanaakk.com/sitemap.xml
+- https://library.tanaakk.com/llms.txt
+- https://library.tanaakk.com/llms-full.txt
+- https://library.tanaakk.com/robots.txt
